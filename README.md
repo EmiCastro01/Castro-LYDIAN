@@ -16,6 +16,6 @@ Utilizamos: https://color.adobe.com/es/Prisci-color-theme-21078407
 
 ## Nuestro Logo
 
-./assets/logo.jpg
+![logo](./assets/logo.jpg)
 
 ## Link Figma
