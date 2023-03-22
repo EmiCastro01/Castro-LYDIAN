@@ -1,0 +1,16 @@
+:root{
+  --header-color: #D2D2D2;
+  --bg-main-color: #D9D9D9;
+  --shadow-color: rgb(184, 184, 184);
+  --secondary-color: #DA9F59;
+  --main-color: #025E73;
+}
+@import url("https://fonts.google.com/specimen/Raleway?query=rale");
+*{
+  padding:0;
+  margin :0;
+}
+body{
+  background-color: var(--bg-main-color);
+  font-family: 'Raleway', sans-serif;
+}
