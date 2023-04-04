@@ -17,7 +17,6 @@ a{
 }
 body{
   background-color: var(--bg-main-color);
- 
 }
 .main-container{
   display: flex;
@@ -68,7 +67,7 @@ li{
 }
 .banner{
   width: 100%;
-  height: 10vh;
+  height: 15vh;
   background-image: url("../../assets/banner-img.jpg");
   box-shadow: 10px 10px  var(--header-color);
 }
@@ -77,7 +76,7 @@ li{
 .main-sections-container{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .left-section{
   display: flex;
@@ -99,27 +98,13 @@ li{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 2rem;
-  margin-right: 4rem;
+  gap: 0.1rem;
 }
 .product{
   height: 100%;
   width: 100%;
 }
-.product-content:hover{
-  cursor: pointer;
-  height: 120px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border: solid 1px white;
-  border-radius: 2%;
-  background-color: white;
-  margin: 2rem;
-  padding: 2rem;
-  box-shadow: 4px 4px var(--nav-bar-color);
 
-}
 .product-content{
   cursor: pointer;
   height: 120px;
@@ -127,12 +112,15 @@ li{
   flex-direction: row;
   justify-content: space-between;
   border: solid 1px white;
-  border-radius: 2%;
   background-color: white;
   margin: 2rem;
   padding: 2rem;
-  box-shadow: 4px 4px var(--header-color);
-  transition: box-shadow .3s ease;
+  box-shadow: 4px 4px 10px var(--header-color);
+  transition: all .3s ease;
+}
+.product-content:hover{
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
+  transform: scale(104%);
 }
 .product-content > .product-img{
   align-content: center;
@@ -153,10 +141,12 @@ li{
 }
 /*FOOTER*/
 .footer{
+  justify-self: end;
+  height: 20vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: var(--nav-bar-color);
+  background-color: var(--header-color);
   align-items: center;
   border-top: solid 1px black;
 }
@@ -186,7 +176,7 @@ li{
   margin-bottom: 10rem;
   padding: 1rem;
   border-radius: 4px;
-  box-shadow: 2px 2px rgb(170, 170, 170);
+  box-shadow: 2px 2px 10px rgb(170, 170, 170);
 }
 .product-detail-img{
   padding: 1rem;
@@ -216,24 +206,22 @@ li{
   background-color: var(--nav-bar-color);
   padding: 0.8rem;
   border-radius: 5px;
-  transition: padding .3s ease;
+  transition: all .3s ease;
 }
 .product-detail-content >  .product-detail-buttons > .buy-now:hover{
   background-color: var(--nav-bar-color);
-  padding: 0.9rem;
-  border-radius: 5px;
+  transform: scale(110%);
   cursor: pointer;
 }
 .product-detail-content >  .product-detail-buttons > .go-to-cart{
   background-color: var(--main-color);
   padding: 0.8rem;
   border-radius: 5px;
-  transition: padding .3s ease;
+  transition: all .3s ease;
 }
 .product-detail-content >  .product-detail-buttons > .go-to-cart:hover{
   background-color: var(--main-color);
-  padding: 0.9rem;
-  border-radius: 5px;
+  transform: scale(110%);
   cursor: pointer;
 
 }
@@ -308,15 +296,80 @@ li{
   border-radius: 5px;
   cursor: pointer;
   margin: 1rem;
-  transition: padding .3s ease;
-  transition: background-color .3s ease;
+  transition: all .3s ease;
 }
 .cart-buy-button:hover{
   background-color: var(--main-color);
-  padding: 1rem;
-  border-radius: 5px;
+  transform: scale(110%);
   cursor: pointer;
-  margin: 1rem;
-  transition: padding .3s ease;
+
 }
 
+/* Register */
+.register-container{
+  background-color: whitesmoke;
+  margin: 3rem;
+  padding: 2rem;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+  align-items: center;
+  border: solid 1px var(--main-color);
+  box-shadow: 2px 2px 10px rgba(0,0,0,.4);
+  width: 50%;
+}
+.register-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.register-form > input{
+  padding: .2rem;
+  border: solid 1px var(--main-color);
+}
+.submit-button{
+  margin-top: 3rem;
+  background-color: var(--header-color);
+  border-radius: 5px;
+  transition: all .2s ease;
+}
+.submit-button:hover{
+  transform: scale(104%);
+  cursor: pointer;	
+  background-color: var(--secondary-color);
+}
+.forgot-password{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.forgot-password > a{
+  font-size: smaller;
+}
+.header-register{
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  background-color: var(--nav-bar-color);
+  border-bottom: solid 1px black;
+}
+.already-registered{
+  display: flex;
+  flex-direction: row;
+}
+.already-registered > p,a{
+  font-size: smaller;
+}
+
+/* ICONOS */
+
+.material-symbols-outlined:hover{
+  cursor:pointer;
+}
