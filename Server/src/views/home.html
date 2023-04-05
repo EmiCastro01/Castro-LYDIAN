@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+</head>
+<body>
+  <div class="main-container">
+    <header class="header">
+        <img src="/resources/logo.png" alt="logo" class="logo" />
+          <ul class="nav-bar-links">
+            <li>
+              <a class="index-link" href="#">INICIO</a>
+            </li>
+            <li>
+              <a class="help-link" href="/">AYUDA</a>
+            </li>
+          </ul>
+            <div class="icon-container">
+              <a href="../views/cart.html">
+              <span class="material-symbols-outlined">
+                shopping_cart
+                </span>
+              </a>
+                <span class="material-symbols-outlined">
+                  account_circle
+                  </span> 
+                  <span class="material-symbols-outlined">
+                    search
+                    </span>             
+            </div>
+    </header> 
+      <div class="banner">
+      </div>
+      <div class="main-sections-container">
+        <section class="left-section">
+          <div class="left-content">
+            <p class="product-path">Instrumentos > Guitarras > Acústicas</p>
+          </div>
+          <select name="filtros">
+            <option value="usados">Usados</option>
+            <option value="nuevos">Nuevos</option>
+            <option value="filtros" selected >Filtros</option>
+          </select>
+          <select name="ubicacion">
+            <option value="Cordoba">Usados</option>
+            <option value="Buenos Aires">Nuevos</option>
+            <option value="ubicacion" selected >Ubicacion</option>
+          </select>
+        </section>
+        <section class="products-section">
+          <article class="product-content">
+            <div class="product-img">
+              <img class="product" src="resources/fender-acoustic.jpg" alt="product" />
+            </div>
+            <div class="product-details">
+              <div class="product-name">
+                <h3>Guitarra Acústica Fender</h3>
+              </div>
+              <div class="price-details">
+                  <p>$ 80.000</p>
+                  <p>Vendedor: Olmos-music</p>
+              </div>
+            </div>
+          </article>
+          <article class="product-content">
+            <div class="product-img">
+              <img class="product" src="resources/alesis-nitromesh.jpg" alt="product" />
+            </div>
+            <div class="product-details">
+              <div class="product-name">
+                <h3>Alesis Nitro Mesh kit</h3>
+              </div>
+              <div class="price-details">
+                  <p>$ 300.999</p>
+                  <p>Vendedor: Emi Castro</p>
+              </div>
+            </div>
+          </article>
+          <article class="product-content">
+            <div class="product-img">
+              <img class="product" src="resources/taylor-acoustic.jpg" alt="product" />
+            </div>
+            <div class="product-details">
+              <div class="product-name">
+                <h3>Guitarra Acústica Taylor</h3>
+              </div>
+              <div class="price-details">
+                  <p>$ 120.000</p>
+                  <p>Vendedor: Olmos-music</p>
+              </div>
+            </div>
+          </article>
+          <a href="../views/detail-product.html">
+          <article class="product-content">
+            <div class="product-img">
+              <img class="product" src="resources/daddario.jpg" alt="product" />
+            </div>
+            <div class="product-details">
+              <div class="product-name">
+                <h3>Cuerdas D'Addario</h3>
+              </div>
+              <div class="price-details">
+                  <p>$ 2.500</p>
+                  <p>Vendedor: Olmos-music</p>
+              </div>
+            </div>
+          </article>
+          </a>
+        </section>
+      </div>
+    <footer class="footer">
+      <div class="copyright">
+        <p>©2023 Lydian,INC.</p>
+      </div>
+      <div class="links">
+        <ul class="links-links">
+          <li><a href="#">Deja tu opinión</a></li>
+          <li><a href="#">Más</a></li>
+        </ul>
+      </div>
+      <div class="logo-footer">
+        <img class="footer-logo" src="resources/logo.png" alt="logo-footer" />
+      </div>
+      <div class="social-links">
+        <img class="facebook-icon" src="../../assets/facebook-icon.svg" alt="facebook-icon" />
+        <img class="whatsapp-icon"src="../../assets/whatsapp-icon.svg" alt="whatsapp-icon" />
+        <img class="instagram-icon" src="../../assets/instagram-icon.svg" alt="instagram-icon" />
+
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
