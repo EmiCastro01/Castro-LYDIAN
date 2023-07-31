@@ -11,7 +11,7 @@ const routes = (app) => {
   app.get('/users', userController.usersView);
   app.get('/home', userController.homeView);
   app.get('/', userController.signUpView);
-  app.get('/detail-product',  userController.detailProduct);
+  app.get('/detail-product/:id',  productsController.detailProduct);
   app.get('/register', userController.register);
   app.get('/loginView', userController.loginView);
   app.get('/cart', userController.cart);

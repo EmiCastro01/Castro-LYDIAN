@@ -33,9 +33,7 @@ const homeView = (req, res) => {
   res.render(path.join(__dirname, '../views/bienvenidos.ejs'))
 }
 
-const detailProduct = (req, res) => {
-  res.render(path.join(__dirname, '../views/detail-product.ejs'))
-}
+
 
 const cart = (req, res) => {
   res.render(path.join(__dirname, '../views/cart.ejs'))
@@ -127,7 +125,6 @@ const errorView = (req,res) =>{
 }
 module.exports = {
   homeView,
-  detailProduct,
   cart,
   register,
   login,

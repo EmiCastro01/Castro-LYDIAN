@@ -4,6 +4,10 @@ const {validationResult} = require('express-validator')
 const bcrypt = require('bcrypt');
 const Products = require('../models').producto;
 
+
+
+
+
   const productsView = (req,res,next) => {
     return  Products.findAll()
     .then( Products => {  
@@ -24,10 +28,30 @@ const Products = require('../models').producto;
                       })
   }
 
+  const detailProduct = async (req, res, next) => {
+    try {
+  const product = await Products.findOne({where: {id: req.params.id}}); 
+  if (!product) {
+  res.status(404).render('error', {
+      title: 'Página no encontrada',
+      subtitle: 'Página no encontrada',
+      errorNumber: '404'
+  })
+  return
+  }
+  res.render(path.join(__dirname,'../views/detail-product.ejs'))
 
+}catch (error) {
+  console.error('Error al obtener productos:', error);
+  res.status(500).send('Error al obtener productos');
+}
+
+}
+
+  
  
 module.exports = {
   productsView,
-
+  detailProduct,
 }
 
