@@ -24,14 +24,10 @@ app.use(session({
   cookie: { maxAge: unDia},
   resave: true,
 }))
-app.use(function(req, res, next) {
-  res.locals.session = req.session
-  next()
-})
 
 router.routes(app);
 
-app.use((err, req, res, next) => {
+app.use((req, res, next) => {
   res.status(404).render('error', {
     title: 'Página no encontrada',
     subtitle: 'Página no encontrada',

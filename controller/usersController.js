@@ -94,6 +94,13 @@ const logout = (req, res) => {
   res.redirect('/')
 }
  
+const errorView = (req,res) =>{
+  res.render(path.join(__dirname, '../views/error.ejs'),
+  {
+      title: 'No Encontrado'
+  }
+  )
+}
 module.exports = {
   homeView,
   detailProduct,
@@ -105,6 +112,6 @@ module.exports = {
   signUpView,
   logout,
   usersView,
-
+  errorView
 }
 
