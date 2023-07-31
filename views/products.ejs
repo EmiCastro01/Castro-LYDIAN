@@ -1,0 +1,18 @@
+<h2>Lista de Productos</h2>
+     
+<ul>
+  <% if (Products.length ===0){%>
+      <div>NO HAY USUARIOS</div>
+  <%}  else {%>
+    <% Products.forEach(function(product) { %>
+        <li id="product_<%= product.id %>">
+          <div class="wrapper">
+            <div><%= product.name %> </div>
+            <div><%= product.price %> </div>
+            <div><%= product.seller %></div>
+          </div>                    
+              
+        </li>
+    <%}); %>
+  <% } %>
+</ul>  

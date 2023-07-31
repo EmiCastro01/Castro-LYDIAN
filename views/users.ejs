@@ -1,0 +1,17 @@
+<h2>Lista de Usuarios</h2>
+     
+<ul>
+  <% if (Users.length ===0){%>
+      <div>NO HAY USUARIOS</div>
+  <%}  else {%>
+    <% Users.forEach(function(user) { %>
+        <li id="user_<%= user.id %>">
+          <div class="wrapper">
+            <div><%= user.name %> </div>
+            <div><%= user.email %></div>
+          </div>                    
+              
+        </li>
+    <%}); %>
+  <% } %>
+</ul>  
