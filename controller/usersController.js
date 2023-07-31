@@ -41,9 +41,33 @@ const cart = (req, res) => {
   res.render(path.join(__dirname, '../views/cart.ejs'))
 }
 
-const login = (req, res) => {
-  
+const login = async (req, res) => {
+  const {email, password} = req.body;
+
+  try{
+      const user = await Users.findOne({ where: { email: email } });
+      if (user && bcrypt.compareSync(password, user.password)) {
+          res.cookie('username', user.name, {
+              maxAge: 1000 * 60 * 60 * 24,
+              httpOnly: true,
+            });
+        req.session.userId = user.id 
+        req.session.us = user.name;
+        req.session.showGreeting = true;
+        res.redirect('/products');
+      } else {
+        req.session.showGreeting = false;
+       res.render('error')
+       
+      }
+
+  }catch (error) {
+  console.error('Error al iniciar sesión:', error);
+  res.status(500).send('Error al iniciar sesión');
 }
+}
+
+
 
 const loginView = (req, res) => {
   res.render(path.join(__dirname, '../views/login.ejs'))
