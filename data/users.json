@@ -1,0 +1,14 @@
+{ "usuarios": [
+  {
+    "id": 1,
+    "name": "Emiliano",
+    "lastName": "Castro",
+    "password": "$2b$10$dUtke2ReK.Em6qHPSuJuWuCZfbVayDKBw5t6pqIcs/7mdkSwYhGM."
+  },
+  {
+    "id": 2,
+    "name": "gopnza",
+    "email": "gonza@hola.com",
+    "password": "$2b$10$doA0TTBQkI9Jt84KjLGFzOkA5R6usWVKgDsRIa4atF1buglHLAbzC"
+  }
+]}

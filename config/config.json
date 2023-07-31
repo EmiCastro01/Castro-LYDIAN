@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Boquita2001",
+    "database": "lydian",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "Boquita2001",
+    "database": "lydian",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "Boquita2001",
+    "database": "lydian",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
