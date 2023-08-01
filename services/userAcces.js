@@ -20,7 +20,9 @@ const writeUser  = async (userData) => {
       email: userData.email,
       name: userData.name,
       password: bcrypt.hashSync(userData.password, 10),
-      lastname: userData.lastname
+      lastname: userData.lastname,
+      domicilio: userData.domicilio,
+      numcel: userData.numcel
     }
 return await User.create(newUser)
     

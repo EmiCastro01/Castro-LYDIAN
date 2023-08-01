@@ -94,7 +94,9 @@ const signUp = async(req, res, next) => {
         email: req.body.email,
         name: req.body.name,
         lastname: req.body.lastname,
-        password: req.body.password
+        password: req.body.password,
+        domicilio: req.body.domicilio,
+        numcel: req.body.numcel,
       }
 
       await writeUser(userData)
