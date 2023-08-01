@@ -11,26 +11,7 @@
 <body>
   <div class="main-container">
   <header class="header">
-    <img src="resources/logo.png" alt="logo" class="logo" />
-      <ul class="nav-bar-links">
-        <li>
-          <a class="index-link" href="./home.html">INICIO</a>
-        </li>
-        <li>
-          <a class="help-link" href="/">AYUDA</a>
-        </li>
-      </ul>
-        <div class="icon-container">
-          <span class="material-symbols-outlined">
-            shopping_cart
-            </span>
-            <span class="material-symbols-outlined">
-              account_circle
-              </span> 
-              <span class="material-symbols-outlined">
-                search
-                </span>             
-        </div>
+    <%- include('./partials/header.ejs') %>
 </header> 
   <section class="cart-container">
     <div class="cart-title">CARRITO</div>
@@ -99,23 +80,7 @@
   </section>
   </div>
     <footer class="footer">
-      <div class="copyright">
-        <p>©2023 Lydian,INC.</p>
-      </div>
-      <div class="links">
-        <ul class="links-links">
-          <li><a href="#">Deja tu opinión</a></li>
-          <li><a href="#">Más</a></li>
-        </ul>
-      </div>
-      <div class="logo-footer">
-        <img class="footer-logo" src="resources/logo.png" alt="logo-footer" />
-      </div>
-      <div class="social-links">
-        <img class="facebook-icon" src="resources/facebook-icon.svg" alt="facebook-icon" />
-        <img class="whatsapp-icon"src="resources/whatsapp-icon.svg" alt="whatsapp-icon" />
-        <img class="instagram-icon" src="resources/instagram-icon.svg" alt="instagram-icon" />
-      </div>
+      <%- include('./partials/footer.ejs') %>
     </footer>
   </div>
 </body>
