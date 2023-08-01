@@ -52,7 +52,7 @@ const login = async (req, res) => {
         req.session.userId = user.id 
         req.session.us = user.name;
         req.session.showGreeting = true;
-        res.redirect('/products');
+        res.redirect('/home');
       } else {
         req.session.showGreeting = false;
        res.render('error')
